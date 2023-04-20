@@ -6,3 +6,24 @@
 .name {
     width: 10rem;
 }
+.quality{
+    display: flex;
+    justify-content: center;
+    min-width: 3rem;
+}
+
+.gold {
+    background-color: rgba(221,71,69,1);
+}
+
+.papper {
+    background-color: rgba(64,91,220,1);
+}
+
+.glitter {
+    background-color: rgba(126,66,225,1);
+}
+
+.holo {
+    background-color: rgba(189,44,219,1);
+}

@@ -6,3 +6,49 @@
 .name {
     width: 10rem;
 }
+.quality{
+    display: flex;
+    justify-content: center;
+    min-width: 3rem;
+}
+
+button {
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s linear; 
+}
+
+.goldbtn {
+    background-color: rgba(221,71,69,1);
+}
+
+.papperbtn {
+    background-color: rgba(64,91,220,1);
+}
+
+.glitterbtn {
+    background-color: rgba(126,66,225,1);
+}
+
+.holobtn {
+    background-color: rgba(189,44,219,1);
+}
+
+.goldbtn:hover {
+    background-color: rgba(221,71,69,0.7);
+    
+}
+
+.papperbtn:hover {
+    background-color: rgba(64,91,220,0.7);
+}
+
+.glitterbtn:hover {
+    background-color: rgba(126,66,225,0.7);
+}
+
+.holobtn:hover {
+    background-color: rgba(189,44,219,0.7);
+}

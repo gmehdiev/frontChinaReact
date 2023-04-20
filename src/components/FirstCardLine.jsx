@@ -11,10 +11,10 @@ const FirstCardLine = function({ onSort }) {
     return(
         <div className="cardList">
           <div className="name">name</div>
-          <button className="papper" onClick={handleClick} value="papperCount">papper</button>
-          <button className="glitter" onClick={handleClick} value="glitterCount">glitter</button>
-          <button className="holo" onClick={handleClick} value="holoCount">holo</button>
-          <button className="gold" onClick={handleClick} value="goldCount">gold</button>
+          <button className="quality papperbtn" onClick={handleClick} value="papperCount">papper</button>
+          <button className="quality glitterbtn" onClick={handleClick} value="glitterCount">glitter</button>
+          <button className="quality holobtn" onClick={handleClick} value="holoCount">holo</button>
+          <button className="quality goldbtn" onClick={handleClick} value="goldCount">gold</button>
         </div>
     )
 } 
