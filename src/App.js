@@ -6,7 +6,7 @@ import Button from "./components/Button";
 
 function App() {
   const [selectedMajor, setSelectedMajor] = useState("");
-
+  const [data, setData]=useState("");
   const handleClick = (major) => {
     setSelectedMajor(major);
   }
@@ -17,20 +17,23 @@ function App() {
       <div className="btn">
       <Button name="antwerp" onClick={() => handleClick("antwerp")} />
       <Button name="rio" onClick={() => handleClick("rio")} />
-      <Button name="paris" onClick={() => handleClick("paris")} />
+      <Button name="parisЕЩЕ НЕ ВЫШЛИ" onClick={() => handleClick("paris")} />
+      </div>
+      <div className="upd">
+        <button className="updatebtn" onClick={() => setData(Date.now)}>Обновить данные</button>
       </div>
       <div className="comand">
-      <Card capsuleName='legendsSticker' selectedMajor={selectedMajor}  name='' img=''/>
-      <Card capsuleName='contendersSticker' selectedMajor={selectedMajor}  name='' img=''/>
-      <Card capsuleName='challengersSticker' selectedMajor={selectedMajor}  name='' img=''/>
+      <Card capsuleName='legendsSticker' selectedMajor={selectedMajor}  update={data}/>
+      <Card capsuleName='contendersSticker' selectedMajor={selectedMajor}  update={data}/>
+      <Card capsuleName='challengersSticker' selectedMajor={selectedMajor}  update={data}/>
       </div>
       <div className="auto">
-      <Card capsuleName='legendsAutograph' selectedMajor={selectedMajor} name='' img=''/>
-      <Card capsuleName='contendersAutograph' selectedMajor={selectedMajor} name='' img=''/>
-      <Card capsuleName='challengersAutograph' selectedMajor={selectedMajor} name='' img=''/>
+      <Card capsuleName='legendsAutograph' selectedMajor={selectedMajor} update={data}/>
+      <Card capsuleName='contendersAutograph' selectedMajor={selectedMajor} update={data}/>
+      <Card capsuleName='challengersAutograph' selectedMajor={selectedMajor} update={data}/>
       </div>
       <div className="champ">
-      <Card capsuleName='championsAutograph' selectedMajor={selectedMajor} name='' img=''/>
+      <Card capsuleName='championsAutograph' selectedMajor={selectedMajor} update={data}/>
       </div>
     </div>
   );

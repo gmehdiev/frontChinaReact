@@ -31,6 +31,6 @@
     width: 10rem;
 }
 
-.name:nth-child(2n){
+.list  .name:nth-child(2n){
     background-color: rgb(51,56,63);
 }

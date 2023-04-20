@@ -33,3 +33,23 @@
     justify-content: space-around;
     margin: 1rem 0 1rem;
 }
+
+.upd {
+    display: flex;
+    justify-content: center;
+}
+
+.updatebtn{
+    height: 3rem;
+    width: 6rem;
+    background-color: rgb(104,147,47);
+    cursor: pointer;
+    transition: 0.2s linear; 
+    border-radius: 10px;
+}
+
+
+.updatebtn:hover{
+    background-color: rgba(139, 199, 62, 0.9);
+    border-radius: 15px;
+}

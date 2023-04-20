@@ -46,7 +46,7 @@ const Card = function (prop){
         .catch((error) => {
           console.log(error);
         });
-    }, [prop.selectedMajor]);
+    }, [prop.selectedMajor,prop.update]);
     
    const handleSort = (property) => {
     setPosts([...posts].sort((a, b) => b[property] - a[property]));
