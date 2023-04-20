@@ -8,3 +8,12 @@
     display: flex;
     justify-content: center;
 }
+
+.App{
+    width: 80rem;
+}
+
+.comand {
+    display: flex;
+    justify-content: space-around;
+}
